@@ -10,14 +10,16 @@ export default function SearchHeader() {
     <header className="sticky top-0 bg-white">
       <div className="flex w-full p-6 items-center justify-between">
         <Link href="/">
-          <Image
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
-            alt="Google Logo"
-            width={120}
-            height={40}
-            priority
-            style={{ width: "auto" }}
-          />
+          <h3
+            className="text-3xl font-bold"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, blue, red, orange, blue, green, red)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}>
+            nbGoogle
+          </h3>
         </Link>
         <div className="flex-1">
           <SearchBox />
